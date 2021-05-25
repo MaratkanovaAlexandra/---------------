@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="utf-8" name="viewport" content="width=device-width" />
+    <title>Zoos page gorillas</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../assets/header.css" />
+    <link rel="stylesheet" href="../../assets/normal.css" />
+    <link rel="stylesheet" href="../../assets/footer.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="pop-up_back">
+      <div class="pop-up">
+        <img
+          class="close_pop-up"
+          src="../../assets/icons/close-hamburger.svg"
+          alt="close"
+        />
+        <div class="pop-up_img"></div>
+        <h2>together we care, save and protect!</h2>
+        <p>
+          Your most generous gift not only cares for countless animals, but it
+          also offers hope and a vital lifeline to the world’s most endangered
+          wildlife relying on us to survive.
+        </p>
+        <div class="pop-up_buttons">
+          <button class="pop-up_button" data-amount="20">$20</button>
+          <button class="pop-up_button" data-amount="30">$30</button>
+          <button class="pop-up_button" data-amount="50">$50</button>
+          <button class="pop-up_button" data-amount="80">$80</button>
+          <button class="pop-up_button" data-amount="100">$100</button>
+          <button class="pop-up_button other" data-amount="*">Other <mark>amount</mark></button>
+        </div>
+      </div>
+      <div class="step1">
+        <div class="pop-up-donate-head">make your donation</div>
+        <div class="donate-name">Donation Information:</div>
+        <div class="step1-main">
+          <p>
+            <mark class="star">*</mark>
+            Choose your donation amount:
+          </p>
+          <div class="donate-buttons">
+            <button class="donate-button amount-button" data-amount="10">$10</button>
+            <button class="donate-button amount-button"data-amount="20">$20</button>
+            <button class="donate-button amount-button"data-amount="30">$30</button>
+            <button class="donate-button amount-button"data-amount="50">$50</button>
+            <button class="donate-button amount-button"data-amount="80">$80</button>
+            <button class="donate-button amount-button"data-amount="100">$100</button>
+          </div>
+          <div class="other-amount">
+            <button class="other-amount-button amount-button" data-amount="*">Other amount</button>
+            <input
+              class="other-amount-input"
+              type="number"
+            />
+          </div>
+          <div class="special">
+            <button class="special-button">for special pet</button>
+            <output  class="special-input">Choose your favourite</output>
+            <button class="select-button"></button>
+            <div class="pets" >
+              <button class="pet-button" data-value="Lukas the Panda">Lukas the Panda</button>
+              <button class="pet-button" data-value="Andy the Lemur">Andy the Lemur</button>
+              <button class="pet-button" data-value="Glen the Gorilla">Glen the Gorilla</button>
+              <button class="pet-button" data-value="Mike the Alligator">Mike the Alligator</button>
+              <button class="pet-button" data-value="Sam & Lora the eagles family">Sam & Lora the eagles family</button>
+              <button class="pet-button" data-value="Liz the Koala">Liz the Koala</button>
+              <button class="pet-button" data-value="Shake the Lion">Shake the Lion</button>
+              <button class="pet-button" data-value="Senja the Tiger">Senja the Tiger</button>
+            </div>
+          </div>
+          <div class="check-box">
+            <input type="checkbox" name="check" class="check-box-input" />
+            <label for="check" class="step1-check"
+              >Make this a monthly recurring gift</label
+            >
+          </div>
+          <div class="pup-up-bottom">
+            <div class="steps">
+              <div class="step-point filled-step"></div>
+              <div class="step-point"></div>
+              <div class="step-point"></div>
+            </div>
+            <button class="steps-button">
+              next
+              <img src="../../assets/icons/white arrow1.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="step2">
+        <div class="pop-up-donate-head">make your donation</div>
+        <div class="donate-name">Billing Information:</div>
+        <div class="step1-main">
+          <div class="name-input">
+            <label for="name">
+              <mark class="star">*</mark>
+              Your Name
+            </label>
+            <input
+              required
+              class="pup-up-name-input"
+              name="name"
+              type="text"
+              placeholder="First and last name"
+            />
+          </div>
+          <div class="email-input">
+            <label for="Email">
+              <mark class="star">*</mark>
+              Your Email Address
+            </label>
+            <input
+              required
+              placeholder="Enter your email"
+              class="pup-up-email-input"
+              name="Email"
+              type="email"
+              pla
+              ceholder="Enter your email"
+            />
+            <p>
+              You will receive emails from the Online Zoo, including updates and
+              news on the latest discoveries and translations. You can
+              unsubscribe at any time.
+            </p>
+          </div>
+          <div class="pup-up-bottom">
+            <div class="steps">
+              <div class="step-point filled-step"></div>
+              <div class="step-point filled-step"></div>
+              <div class="step-point"></div>
+            </div>
+            <button class="back-button back1">Back</button>
+            <button class="steps-button">
+              next
+              <img src="../../assets/icons/white arrow1.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="step3">
+        <div class="pop-up-donate-head">make your donation</div>
+        <div class="donate-name">Payment Information:</div>
+        <div class="step1-main">
+          <div class="credit-card-number">
+          <div class="card-number">
+            <label for="card-number">
+              <mark class="star">*</mark> Credit Card Number</label
+            >
+            <input
+              required
+              id="card-number"
+              type="number"
+            />
+          </div>
+          <div class="CVV">
+            <label for="CVV">
+              <mark class="star">*</mark> CVV Number</label>
+            </label>
+            <input required type="number" id="CVV"/>
+          </div>
+          </div>
+          <div class="credit-card-date">
+            <div class="card-month">
+              <label for="month"><mark class="star">*</mark> Expiration Date</label>
+              <output class="month-input">Month</output>
+              <button id = "month" class="select-button"></button>
+              <div class="months">
+                <button class="month-button" data-value="01">01</button>
+                <button class="month-button" data-value="02">02</button>
+                <button class="month-button" data-value="03">03</button>
+                <button class="month-button" data-value="04">04</button>
+                <button class="month-button" data-value="05">05</button>
+                <button class="month-button" data-value="06">06</button>
+                <button class="month-button" data-value="07">07</button>
+                <button class="month-button" data-value="08">08</button>
+                <button class="month-button" data-value="09">09</button>
+                <button class="month-button" data-value="10">10</button>
+                <button class="month-button" data-value="11">11</button>
+                <button class="month-button" data-value="12">12</button>
+              </div>
+            </div>
+            <din class="card-year">
+              <output class="year-input">Year</output>
+              <button id = "year"class="select-button"></button>
+              <div class="years">
+                <button class="year-button" data-value="21">21</button >
+                <button class="year-button" data-value="22">22</button >
+                <button class="year-button" data-value="23">23</button >
+                <button class="year-button" data-value="24">24</button >
+                <button class="year-button" data-value="25">25</button >
+                <button class="year-button" data-value="26">26</button >
+              </div>
+            </din>
+          </div>
+          <div class="pup-up-bottom">
+            <div class="steps">
+              <div class="step-point filled-step"></div>
+              <div class="step-point filled-step"></div>
+              <div class="step-point filled-step"></div>
+            </div>
+            <button class="back-button back2">Back</button>
+            <button class="complete-button">
+              complete donation
+              <img src="../../assets/icons/white arrow1.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="header_items">
+        <a href="../landing/index.html"
+          ><img
+            src="../../assets/icons/Logo.svg"
+            alt="logo"
+            width="96px"
+            height="50px"
+        /></a>
+        <h1>Online-Zoo</h1>
+        <nav>
+          <img
+            class="close-hamburger"
+            src="../../assets/icons/close-hamburger.svg"
+            alt="close"
+          />
+          <ul class="menu">
+            <li><a  class="item" href="../landing/index.html">ABOUT</a></li>
+            <li><a  class="item" href="../map/index.html">MAP</a></li>
+            <li><a class="green" href="#">ZOOS</a></li>
+            <li><a  class="item" href="../contact us/index.html">CONTACT US</a></li>
+            <li>
+              <a  class="item"
+                href="https://www.figma.com/file/lnK11foY8Aoa6oOlDXovVN/Online-ZOO-Project"
+                >DESIGN</a
+              >
+            </li>
+          </ul>
+        <ul class="social_networks">
+          <li>
+            <a href="https://www.youtube.com/"
+              ><img src="../../assets/icons/YouTube.svg" alt="YouTube"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/"
+              ><img src="../../assets/icons/Instagram.svg" alt="Instagram"
+            /></a>
+          </li>
+          <li>
+            <a href="https://facebook.com/"
+              ><img src="../../assets/icons/Facebook.svg" alt="Facebook"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+        <img class="hamburger" src="../../assets/icons/hamburger.svg" alt="" />
+      </div>
+    </header>
+    <main>
+      <div class="main-items">
+        <aside>
+          <div class="main-aside">
+            <div class="top side">
+              <div class="live">
+                <p>live</p>
+                <img
+                  src="../../assets/icons/littel_strange_thing.svg"
+                  alt="littel strange thing"
+                  height="20"
+                  width="20"
+                />
+              </div>
+              <div class="arrow"></div>
+            </div>
+            <div class="aside-slider">
+              <div class="animal side">
+                <a class="eclipse choosen" href="#">
+                  <img src="../../assets/icons/Gorilla_Logo.svg" alt="Gorilla Logo" />
+                </a>
+                <p>Live<mark>stream</mark> from Gorilla Forest Corridor habitat cam</p>
+              </div>
+              <div class="animal side">
+                <a class="eclipse" href="lemur.html">
+                  <img src="../../assets/icons/Lemur_Logo.svg" alt="Lemur Logo" />
+                </a>
+                <p><mark>The ring-tailed </mark>lemurs play in Madagascar, Lemuria Land</p>
+              </div>
+              <div class="animal side">
+                <a class="eclipse" href="panda.html">
+                  <img src="../../assets/icons/Panda_Logo.svg" alt="Panda Logo" />
+                </a>
+                <p>Watch live from China's Panda Center </p>
+              </div>
+              <div class="animal side">
+                <a class="eclipse" href="eagle.html">
+                  <img src="../../assets/icons/Eagle_Logo.svg" alt="Eagle Logo" />
+                </a>
+                <p>Watch The Bald Eagles Nest from West End cam</p>
+              </div>
+              <div class="animal side">
+                <a class="eclipse" href="#">
+                  <img src="../../assets/icons/Coala.svg" alt="Koala Logo" />
+                </a>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+              </div>
+              <div class="animal side">
+                <a class="eclipse" href="#">
+                  <img src="../../assets/icons/Lion.svg" alt="Lion Logo" />
+                </a>
+                <p> Aenean commodo ligula eget dolor.</p>
+              </div>
+              <div class="animal side">
+                <a class="eclipse" href="#">
+                  <img src="../../assets/icons/Alligator.svg" alt="Crocodile Logo" />
+                </a>
+                <p>Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.</p>
+              </div>
+              <div class="animal side" >
+                <a class="eclipse" href="#">
+                  <img src="../../assets/icons/tiger.svg" alt="Tiger Logo" />
+                </a>
+                <p>Donec vitae sapien ut libero venenatis faucibus.</p>
+              </div>
+            </div>
+            <div class="bottom side"><div class="arrow"></div>
+          </div>
+        </aside>
+        <div class="cams">
+          <div class="up">
+            <h2>gorillas cams</h2>
+            <button class="red donate">
+              donate now<img src="../../assets/icons/Union.svg" alt="arrow" />
+            </button>
+          </div>
+          <div class="main-inframe">
+            <iframe class = "big-inframe"
+              width="1401"
+              height="787"
+              src="https://www.youtube.com/embed/pZGHsWWaslo"
+              title="YouTube video player"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+            <div class="plug">
+              <output class="plug-text">Glen, Western lowland gorilla cam 1</output>
+              <div class="play-button"></div>
+            </div>
+          </div>
+          <h3>More live views</h3>
+          <div class="more-cams">
+            <button class="left">
+              <img src="../../assets/icons/arrow_left.svg" alt="" />
+            </button>
+            <div class="cams-wrapper"> 
+              <div class = "cams-slider">
+                <figure>
+                  <iframe
+                    width="320"
+                    height="209"
+                    src="https://www.youtube.com/embed/Y_ksdk27O8s"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allowfullscreen
+                  ></iframe>
+                  <div class="plug">
+                    <h4 class="plug-text">
+                      cam 1
+                      <img
+                        src="../../assets/icons/littel_strange_thing.svg"
+                        alt="littel_strange_thing"
+                        height="20"
+                        width="20"
+                      />
+                    </h4>
+                    <div class="play-button"></div>
+                  </div>
+                </figure>
+                <figure>
+                  <iframe
+                    width="320"
+                    height="209"
+                    src="https://www.youtube.com/embed/D1S5V6ACkP0"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allowfullscreen
+                  ></iframe>
+                  <div class="plug">
+                    <h4 class="plug-text">
+                      cam 2
+                      <img
+                        src="../../assets/icons/littel_strange_thing.svg"
+                        alt="littel_strange_thing"
+                        height="20"
+                        width="20"
+                      />
+                    </h4>
+                    <div class="play-button"></div>
+                  </div>
+                </figure>
+                <figure>
+                  <iframe
+                    width="320"
+                    height="209"
+                    src="https://www.youtube.com/embed/5asOQMYUnug"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allowfullscreen
+                  ></iframe>
+                  <div class="plug">
+                    <h4 class="plug-text">
+                      cam 3
+                      <img
+                        src="../../assets/icons/littel_strange_thing.svg"
+                        alt="littel_strange_thing"
+                        height="20"
+                        width="20"
+                      />
+                    </h4>
+                    <div class="play-button"></div>
+                  </div>
+                </figure>
+                <figure>
+                  <iframe
+                    width="320"
+                    height="209"
+                    src="https://www.youtube.com/embed/7fQmjbx9zoY"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allowfullscreen
+                  ></iframe>
+                  <div class="plug">
+                    <h4 class="plug-text">
+                      cam 4
+                      <img
+                        src="../../assets/icons/littel_strange_thing.svg"
+                        alt="littel_strange_thing"
+                        height="20"
+                        width="20"
+                      />
+                    </h4>
+                    <div class="play-button"></div>
+                  </div>
+                </figure>
+                <figure>
+                  <iframe
+                    width="320"
+                    height="209"
+                    src="https://www.youtube.com/embed/lJ0YNnxao9M"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allowfullscreen
+                  ></iframe>
+                  <div class="plug">
+                    <h4 class="plug-text">
+                      cam 5
+                      <img
+                        src="../../assets/icons/littel_strange_thing.svg"
+                        alt="littel_strange_thing"
+                        height="20"
+                        width="20"
+                      />
+                    </h4>
+                    <div class="play-button"></div>
+                  </div>
+                </figure>
+                <figure>
+                  <iframe
+                    width="320"
+                    height="209"
+                    src="https://www.youtube.com/embed/m2J7emDEk6M"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allowfullscreen
+                  ></iframe>
+                  <div class="plug">
+                    <h4 class="plug-text">
+                      cam 6
+                      <img
+                        src="../../assets/icons/littel_strange_thing.svg"
+                        alt="littel_strange_thing"
+                        height="20"
+                        width="20"
+                      />
+                    </h4>
+                    <div class="play-button"></div>
+                  </div>
+                </figure>
+                <figure>
+                  <iframe
+                    width="320"
+                    height="209"
+                    src="https://www.youtube.com/embed/1dCf_VM-zAE"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allowfullscreen
+                  ></iframe>
+                  <div class="plug">
+                    <h4 class="plug-text">
+                      cam 7
+                      <img
+                        src="../../assets/icons/littel_strange_thing.svg"
+                        alt="littel_strange_thing"
+                        height="20"
+                        width="20"
+                      />
+                    </h4>
+                    <div class="play-button"></div>
+                  </div>
+                </figure>
+              </div>
+            </div>
+            <button class="right">
+              <img src="../../assets/icons/arrow_right.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="donation_background">
+          <div class="donation">
+            <div class="text">
+              <h3>make a difference for the gorillas!</h3>
+              <p>
+                It is our goal to ensure the conservation and restoration of the
+                gorilla population and their habitat in Central Africa. To do
+                this, we need your help! Bring your food charity straight to
+                Glen and his family.
+              </p>
+            </div>
+            <div class="input">
+              <h4>Quick Donate</h4>
+              <div class="form">
+                <input
+                  class="number"
+                  type="number"
+                  max="9999"
+                  min="0"
+                  placeholder="   Donation Amount"
+                />
+                <button class="btn quick">
+                  <img src="../../assets/icons/Union.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="inform">
+          <div class="card letter">
+            <h3>did you know?</h3>
+            <h4>
+              In addition to having distinctive fingerprints like humans do,
+              gorillas also have unique nose prints. Gorillas are the largest of
+              the great apes, but the western lowland gorilla is the smallest of
+              the subspecies.
+            </h4>
+          </div>
+          <div class="animal-card">
+            <div class="data">
+              <div class="data-inf big">
+                <h4>Common name:</h4>
+                <p>Western lowland gorillas</p>
+              </div>
+              <div class="data-inf big">
+                <h4>Scientific name:</h4>
+                <p>Gorilla gorilla gorilla</p>
+              </div>
+              <div class="data-inf">
+                <h4>Type:</h4>
+                <p>Mammals</p>
+              </div>
+              <div class="data-inf">
+                <h4>Size:</h4>
+                <p>Standing height, four to six feet</p>
+              </div>
+              <div class="data-inf">
+                <h4>Diet:</h4>
+                <p>Omnivore</p>
+              </div>
+              <div class="data-inf small">
+                <h4>Habitat:</h4>
+                <p>Rainforests</p>
+              </div>
+              <div class="data-inf bot">
+                <h4>Range:</h4>
+                <p>Western Africa</p>
+                <a href="../map/index.html"
+                  ><button>
+                    view map
+                    <div class="arrow"></div></button
+                ></a>
+              </div>
+            </div>
+            <img src="../../assets/images/gorilla_page_image.jpg" alt="" />
+          </div>
+          <p>
+            Western lowland gorillas are the smallest of the four subspecies.
+            They live in thick tropical rainforests, where they find plenty of
+            food for their vegetarian diet. They eat roots, shoots, fruit, wild
+            celery, and tree bark and pulp. Gorillas can climb trees, but
+            they’re usually found on the ground in communities—known as troops.
+            Troops are led by one dominant, older adult male, often called a
+            silverback because of the swath of silver hair that adorns his
+            otherwise dark fur. Troops also include several other young males,
+            some females, and their offspring. The leader organizes troop
+            activities, such as eating, nesting in leaves, and moving about the
+            group's home range. Gorillas prefer traveling on all fours, pushing
+            themselves forward with their knuckles and soles of their feet.
+            Female gorillas give birth to one infant after a pregnancy of nearly
+            nine months. These infants ride on their mothers’ backs from the age
+            of four months through the first two or three years of their lives.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer_items">
+        <div class="footer_top">
+          <ul>
+            <li>
+              <img
+                src="../../assets/icons/white_Logo.svg"
+                alt="Logo"
+                title="Online-Zoo"
+              />
+            </li>
+            <li>
+              <img
+                src="../../assets/icons/Yem Digital.svg"
+                alt="Yem Digital"
+                title="Yem Digital"
+              />
+            </li>
+            <li>
+              <img
+                src="../../assets/icons/rs_school_js logo.svg"
+                alt="rs_school"
+                title="rs_schoo"
+              />
+            </li>
+          </ul>
+          <nav>
+            <ul>
+              <li><a href="../landing/index.html">ABOUT</a></li>
+              <li><a href="../map/index.html">MAP</a></li>
+              <li><a href="#">ZOOS</a></li>
+              <li><a href="../contact us/index.html">CONTACT US</a></li>
+            </ul>
+          </nav>
+          <button class="donate">
+            donate for volunteers
+            <img src="../../assets/icons/white arrow1.svg" alt="" />
+          </button>
+        </div>
+        <div class="footer_bottom">
+          <ul class="links">
+            <li>
+              <p>© 2021 DinaK</p>
+            </li>
+            <li>
+              <p>© Yem Digital</p>
+            </li>
+            <li>
+              <p>© RSSchool</p>
+            </li>
+          </ul>
+          <ul class="social_networks foot">
+            <li>
+              <a href="https://www.youtube.com/"
+                ><img src="../../assets/icons/YouTube.svg" alt="YouTube"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/"
+                ><img src="../../assets/icons/Instagram.svg" alt="Instagram"
+              /></a>
+            </li>
+            <li>
+              <a href="https://facebook.com/"
+                ><img src="../../assets/icons/Facebook.svg" alt="Facebook"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+<script src="app.js"></script>
+<script src="../../assets/pop-up.js"></script>

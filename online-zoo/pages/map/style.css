@@ -1,0 +1,365 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main > h2 {
+  width: 601px;
+
+  margin: 40px 0px 70px;
+
+  text-align: center;
+  color: #20113d;
+}
+.map {
+  position: relative;
+  width: 1406px;
+  height: 912px;
+
+  margin-bottom: 150px;
+
+  background: url(../../assets/images/Map.jpg);
+}
+.loc {
+  position: absolute;
+  width: 140px;
+  height: 182px;
+  transition: 0.2s;
+}
+.loc::after {
+  position: absolute;
+  opacity: 0.75;
+  background: #ffffff;
+  border: 2px solid#000000;
+  border-radius: 5px;
+  text-align: center;
+
+  visibility: hidden;
+}
+.loc:hover::after {
+  visibility: visible;
+}
+.eagle {
+  top: 391px;
+  left: 143px;
+  background: url(../../assets/icons/Eagle_Location.svg);
+}
+.eagle::after {
+  left: -100px;
+  top: -50px;
+  content: "NAME: Bald Eagle RANDE: Continental United States";
+  width: 200px;
+}
+.eagle:hover {
+  top: 369px;
+  left: 133px;
+  background: url(../../assets/icons/Eagle_active.svg);
+  filter: drop-shadow(0px 4px 30px rgba(245, 128, 33, 0.7));
+}
+.gorilla {
+  top: 462px;
+  left: 668px;
+  background: url(../../assets/icons/Gorilla_Location.svg);
+}
+.gorilla::after {
+  top: -50px;
+  left: -50px;
+  width: 300px;
+  content: "NAME: Western lowland gorillas RANDE: Western Africa";
+}
+.gorilla:hover {
+  top: 438px;
+  left: 658px;
+  background: url(../../assets/icons/Gorilla_active.svg);
+  filter: drop-shadow(0px 4px 30px rgba(245, 128, 33, 0.7));
+}
+.koala {
+  top: 604px;
+  left: 1124px;
+  background: url(../../assets/icons/Koala_Location.svg);
+}
+.lemur {
+  top: 579px;
+  left: 773px;
+  background: url(../../assets/icons/Lemur_Location.svg);
+}
+.lemur::after {
+  width: 250px;
+  top: 185px;
+  content: "NAME: Ring-Tailed Lemur RANDE: Southeast Asia";
+}
+.lemur:hover {
+  top: 559px;
+  left: 763px;
+  background: url(../../assets/icons/Lemur_active.svg);
+  filter: drop-shadow(0px 4px 30px rgba(245, 128, 33, 0.7));
+}
+.lion {
+  top: 438px;
+  left: 553px;
+  background: url(../../assets/icons/Lion_Location.svg);
+}
+.panda {
+  top: 332px;
+  left: 930px;
+  background: url(../../assets/icons/Panda_Location.svg);
+}
+.panda::after {
+  top: -40px;
+  width: 200px;
+  content: "NAME: Giant Panda RANDE: Eastern Asia";
+}
+.panda:hover {
+  top: 310px;
+  left: 920px;
+  background: url(../../assets/icons/Panda_active.svg);
+  filter: drop-shadow(0px 4px 30px rgba(245, 128, 33, 0.7));
+}
+.tiger {
+  top: 490px;
+  left: 990px;
+  background: url(../../assets/icons/Tiger_Location.svg);
+}
+.crocodile {
+  top: 390px;
+  left: 268px;
+  background: url(../../assets/icons/Crocodile.svg);
+}
+@media screen and (max-width: 1400px) {
+  .map {
+    width: 1198px;
+    height: 777px;
+    background-size: 1198px 777px;
+    margin-bottom: 95px;
+  }
+  main > h2 {
+    margin: 30px 0 20px;
+  }
+  .eagle {
+    top: 311px;
+    left: 111px;
+  }
+  .eagle::after {
+    left: 100px;
+  }
+  .eagle:hover {
+    top: 290px;
+    left: 103px;
+  }
+  .gorilla {
+    top: 370px;
+    left: 560px;
+  }
+  .gorilla:hover {
+    top: 348px;
+    left: 550px;
+  }
+  .koala {
+    top: 491px;
+    left: 947px;
+  }
+  .lemur {
+    top: 468px;
+    left: 649px;
+  }
+  .lemur:hover {
+    top: 446px;
+    left: 640px;
+  }
+  .lion {
+    top: 349px;
+    left: 460px;
+  }
+  .panda {
+    top: 263px;
+    left: 785px;
+  }
+  .panda:hover {
+    top: 238px;
+    left: 775px;
+  }
+  .tiger {
+    top: 397px;
+    left: 835px;
+  }
+  .crocodile {
+    top: 310px;
+    left: 218px;
+  }
+}
+@media screen and (max-width: 1194px) {
+  .map {
+    height: 415px;
+    width: 639px;
+    background-size: 639px 415px;
+    margin-bottom: 105px;
+  }
+  main > h2 {
+    width: 600px;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 51px;
+    margin-bottom: 65px;
+  }
+  .loc {
+    width: 62px;
+    height: 100px;
+    background-size: 62px 100px;
+  }
+  .active:hover {
+    width: 72px;
+    height: 110px;
+    background-size: 72px 110px;
+  }
+  .eagle {
+    top: 163px;
+    left: 62px;
+  }
+  .eagle::after {
+    left: 10px;
+  }
+  .eagle:hover {
+    top: 150px;
+    left: 56px;
+  }
+  .gorilla {
+    top: 202px;
+    left: 304px;
+  }
+  .gorilla:hover {
+    top: 190px;
+    left: 298px;
+  }
+  .gorilla::after {
+    top: -30px;
+    left: -100px;
+  }
+  .koala {
+    top: 265px;
+    left: 500px;
+  }
+  .lemur {
+    top: 255px;
+    left: 353px;
+  }
+  .lemur:hover {
+    top: 243px;
+    left: 347px;
+  }
+  .lemur::after {
+    top: 100px;
+    left: -100px;
+  }
+  .lion {
+    top: 192px;
+    left: 252px;
+  }
+  .panda {
+    top: 142px;
+    left: 427px;
+  }
+  .panda:hover {
+    top: 128px;
+    left: 422px;
+  }
+  .tiger {
+    top: 213px;
+    left: 451px;
+  }
+  .crocodile {
+    top: 170px;
+    left: 123px;
+  }
+}
+@media screen and (max-width: 634px) {
+  .map {
+    height: 234px;
+    width: 320px;
+    background-size: 362px 234px;
+    background-position: center;
+    margin-bottom: 53px;
+  }
+  main > h2 {
+    width: 300px;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 130%;
+    text-transform: lowercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .loc {
+    width: 42px;
+    height: 80px;
+    background-size: 42px 80px;
+  }
+  .active:hover {
+    width: 52px;
+    height: 90px;
+    z-index: 1;
+    background-size: 52px 90px;
+  }
+  .eagle {
+    top: 77px;
+    left: 11px;
+  }
+  .eagle::after {
+    left: 10px;
+  }
+  .eagle:hover {
+    top: 66px;
+    left: 4px;
+  }
+  .gorilla {
+    top: 100px;
+    left: 147px;
+  }
+  .gorilla:hover {
+    top: 90px;
+    left: 139px;
+  }
+  .gorilla::after {
+    width: 270px;
+    top: -40px;
+    left: -120px;
+  }
+  .koala {
+    top: 136px;
+    left: 265px;
+  }
+  .lemur {
+    top: 128px;
+    left: 177px;
+  }
+  .lemur:hover {
+    top: 119px;
+    left: 171px;
+  }
+  .lemur::after {
+    top: 80px;
+    left: -150px;
+  }
+  .lion {
+    top: 92px;
+    left: 118px;
+  }
+  .panda {
+    top: 66px;
+    left: 217px;
+  }
+  .panda:hover {
+    top: 56px;
+    left: 212px;
+  }
+  .panda::after {
+    left: -150px;
+  }
+  .tiger {
+    top: 107px;
+    left: 232px;
+  }
+  .crocodile {
+    top: 80px;
+    left: 45px;
+  }
+}

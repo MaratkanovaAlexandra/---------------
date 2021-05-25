@@ -1,0 +1,224 @@
+input {
+  display: block;
+}
+label {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+.star {
+  color: #00a092;
+  margin-right: 5px;
+}
+label {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+}
+input {
+  width: 680px;
+  height: 60px;
+  padding: 17px 0px 16px 20px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  color: #969696;
+}
+textarea {
+  font-family: Montserrat;
+  width: 680px;
+  height: 200px;
+  padding: 20px;
+
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 5px;
+  resize: none;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  color: #969696;
+}
+input:focus,
+textarea:focus {
+  border: 1px solid #00a092;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 30px rgba(0, 160, 146, 0.3);
+  border-radius: 5px;
+  outline: #00a092;
+}
+input:valid {
+  color: #000;
+}
+input:focus:invalid {
+  background: rgba(245, 128, 33, 0.2);
+  border: 1px solid #f58021;
+  box-shadow: 0px 4px 30px rgba(236, 124, 49, 0.3);
+}
+
+textarea:valid {
+  color: #000;
+}
+textarea:focus:invalid {
+  background: rgba(245, 128, 33, 0.2);
+  border: 1px solid #f58021;
+  box-shadow: 0px 4px 30px rgba(236, 124, 49, 0.3);
+}
+form > button {
+  width: 359px;
+  padding: 26px 80px;
+  margin-top: 67px;
+  background: #00a092;
+  border: 5px solid #00a092;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+form > button:active,
+form > button:hover {
+  background: #05786e;
+  box-shadow: 0px 4px 30px rgba(0, 160, 146, 0.3);
+  border: 5px solid #05786e;
+}
+.left {
+  width: 545px;
+}
+.left > h2 {
+  margin-bottom: 50px;
+}
+section {
+  margin: 145px 0px;
+  width: 1400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1400px) {
+  main {
+    width: 1200px;
+  }
+  main > img {
+    object-fit: cover;
+    width: 1200px;
+    height: 815px;
+  }
+  .left {
+    width: 835px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .left > h2 {
+    margin-left: -110px;
+    margin-bottom: 27px;
+  }
+  section {
+    margin-top: 48px;
+    flex-direction: column;
+    margin-left: 230px;
+    margin-bottom: 100px;
+  }
+  input,
+  textarea {
+    width: 740px;
+  }
+  form > button {
+    margin-top: 45px;
+  }
+}
+@media screen and (max-width: 975px) {
+  main {
+    width: 640px;
+  }
+  main > img {
+    width: 640px;
+    height: 434px;
+  }
+  .left {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .left > h2 {
+    margin-left: 0;
+    width: 405px;
+    margin-bottom: 15px;
+  }
+  label {
+    margin-bottom: 8px;
+  }
+  section {
+    width: 600px;
+    margin-top: 47px;
+    margin-left: 20px;
+    align-items: center;
+  }
+  input,
+  textarea {
+    width: 600px;
+    margin-bottom: 32px;
+  }
+  form > button {
+    width: 290px;
+    padding: 0 30px;
+    margin-top: 15px;
+    margin-left: 155px;
+  }
+}
+@media screen and (max-width: 578px) {
+  main {
+    width: 320px;
+  }
+  main > img {
+    width: 320px;
+    height: 217px;
+  }
+  section {
+    width: 300px;
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-bottom: 80px;
+  }
+  .left {
+    width: 300px;
+    margin-bottom: 45px;
+  }
+  .left > h2 {
+    width: 300px;
+  }
+  label {
+    margin-bottom: 3px;
+  }
+  form {
+    width: 300px;
+  }
+  input,
+  textarea {
+    width: 300px;
+    padding-left: 10px;
+  }
+  input {
+    height: 50px;
+    margin-bottom: 32px;
+  }
+  textarea {
+    padding-top: 15px;
+    margin-bottom: 28px;
+  }
+  form > button {
+    margin: 0;
+    width: 300px;
+  }
+}
