@@ -1,0 +1,48 @@
+.firstPage {
+  height: 790px;
+  max-width: 1920px;
+
+  margin: 0 auto;
+  background-image: url(../assets/images/Panda_background.jpg);
+  background-position: center -50px;
+
+  &__wrapper {
+    padding: 129px 0 0 260px;
+
+    &_article {
+      margin: 0 0 50px 0;
+      max-width: 890px;
+
+      font-weight: 800;
+      font-size: 5.125rem;
+      line-height: 100px;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
+      color: $green;
+    }
+
+    &_text {
+      max-width: 430px;
+
+      @include basicText;
+    }
+
+    &_button {
+      height: 74px;
+      width: 240px;
+      margin-top: 45px;
+
+      @include basicButton;
+      @include buttonText;
+
+      color: #fff;
+    }
+  }
+}
+.button_arrow {
+  width: 26px;
+  height: 22px;
+  margin-left: 10px;
+
+  background: url(../assets/icons/Union.svg);
+}

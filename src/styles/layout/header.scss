@@ -5,6 +5,7 @@
   background: $orange;
 
   &__items {
+    padding: 0 2px;
     height: 100%;
     max-width: 1400px;
 
@@ -15,8 +16,9 @@
   }
 
   &__logo {
+    z-index: 5;
     height: 50px;
-    width: 96px;
+    min-width: 96px;
 
     background-image: url(../assets/icons/Logo.svg);
   }
@@ -54,7 +56,7 @@
 
   &__social_networks {
     min-width: 180px;
-    padding-left: 30px;
+    padding-left: 75px;
 
     display: flex;
     justify-content: space-between;

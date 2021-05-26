@@ -42,10 +42,13 @@ export class Header{
 
     private drawSocialNetworks() {
         const SOCIAL_NETWORKS =  createAndAppendHtmlElement(this._items,"div","header__social_networks");
-        
-        createAndAppendHtmlElement(SOCIAL_NETWORKS,"a","header__social_networks-youtube");
-        createAndAppendHtmlElement(SOCIAL_NETWORKS,"a","header__social_networks-instagram");
-        createAndAppendHtmlElement(SOCIAL_NETWORKS,"a","header__social_networks-facebook");
+
+        const YOUTUBE = createAndAppendHtmlElement(SOCIAL_NETWORKS,"a","header__social_networks-youtube");
+        YOUTUBE.href = "https://m.youtube.com/";
+        const INST = createAndAppendHtmlElement(SOCIAL_NETWORKS,"a","header__social_networks-instagram");
+        INST.href = "https://www.instagram.com/";
+        const FACEBOOK = createAndAppendHtmlElement(SOCIAL_NETWORKS,"a","header__social_networks-facebook");
+        FACEBOOK.href = "https://facebook.com/";
     }
 
     get header():HTMLElement {
