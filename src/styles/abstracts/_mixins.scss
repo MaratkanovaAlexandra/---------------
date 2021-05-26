@@ -1,0 +1,10 @@
+@mixin buttonText {
+  font-family: "Montserrat";
+  font-style: normal;
+
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 150%;
+
+  text-transform: uppercase;
+}

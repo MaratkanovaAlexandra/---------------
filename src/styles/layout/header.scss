@@ -1,0 +1,81 @@
+.header {
+  height: 109px;
+  width: 100%;
+
+  background: $orange;
+
+  &__items {
+    height: 100%;
+    max-width: 1400px;
+
+    display: flex;
+    align-items: center;
+
+    margin: 0 auto;
+  }
+
+  &__logo {
+    height: 50px;
+    width: 96px;
+
+    background-image: url(../assets/icons/Logo.svg);
+  }
+
+  &__nav {
+    height: 100%;
+    flex: 75% 0 1;
+
+    &_ul {
+      max-width: 556px;
+      height: 100%;
+
+      margin: 0 0 0 50%;
+      padding: 0;
+
+      display: flex;
+      justify-content: space-between;
+
+      &-item {
+        list-style-type: none;
+        margin: auto 0;
+
+        @include buttonText;
+      }
+
+      &-item:hover,
+      .active {
+        color: $green;
+      }
+      .active {
+        pointer-events: none;
+      }
+    }
+  }
+
+  &__social_networks {
+    min-width: 180px;
+    padding-left: 30px;
+
+    display: flex;
+    justify-content: space-between;
+
+    &-youtube,
+    &-instagram,
+    &-facebook {
+      width: 40px;
+      height: 40px;
+    }
+
+    &-youtube {
+      background: url(../assets/icons/YouTube.svg);
+    }
+
+    &-instagram {
+      background: url(../assets/icons/Instagram.svg);
+    }
+
+    &-facebook {
+      background: url(../assets/icons/Facebook.svg);
+    }
+  }
+}
