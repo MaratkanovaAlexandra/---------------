@@ -4,7 +4,7 @@
 
   margin: 0 auto;
   background-image: url(../assets/images/Panda_background.jpg);
-  background-position: center -50px;
+  background-position: -20px -40px;
 
   &__wrapper {
     padding: 129px 0 0 260px;
@@ -34,8 +34,6 @@
 
       @include basicButton;
       @include buttonText;
-
-      color: #fff;
     }
   }
 }
@@ -45,4 +43,116 @@
   margin-left: 10px;
 
   background: url(../assets/icons/Union.svg);
+}
+
+.donation {
+  width: 100%;
+  background: $darkBlue;
+  color: #fff;
+
+  &__wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 91px;
+  }
+
+  &__head {
+    font-weight: 600;
+    font-size: 3.375rem;
+    line-height: 66px;
+    text-transform: uppercase;
+  }
+
+  &__block {
+    margin-top: 100px;
+    display: grid;
+    grid-template-areas:
+      "block_top block_top"
+      "block_img block_text";
+
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+
+    &_top {
+      grid-area: block_top;
+      height: min-content;
+      display: flex;
+      justify-content: space-between;
+
+      padding-bottom: 82px;
+
+      &-number {
+        @include donationText;
+      }
+
+      &-line {
+        width: 91%;
+        height: 16.5px;
+
+        border-bottom: 1px solid #fafafa93;
+      }
+    }
+
+    &_img {
+      grid-area: block_img;
+    }
+
+    &_text {
+      grid-area: block_text;
+
+      &-img {
+        padding: 19px 0 30px 0;
+      }
+
+      &-article {
+        @include donationText;
+        padding-bottom: 50px;
+      }
+
+      &-text {
+        max-width: 560px;
+        @include smallText;
+      }
+    }
+  }
+
+  &__button {
+    height: 74px;
+    width: 17%;
+    margin: 50px auto 0 auto;
+    @include basicButton;
+    @include buttonText;
+  }
+}
+
+.care {
+  height: 1000px;
+  max-width: 1920px;
+  margin: 0 auto;
+
+  background-image: linear-gradient(
+      270.86deg,
+      #20113d 0%,
+      rgba(255, 255, 255, 0) 15%
+    ),
+    linear-gradient(90.7deg, #20113d 0%, rgba(255, 255, 255, 0) 15%),
+    url(../assets/images/panda_back.jpg);
+
+  background-size: cover;
+  background-position: -5px center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-left: 50%;
+
+  &__text {
+    width: min-content;
+    text-align: center;
+
+    font-weight: 500;
+    font-size: 5.125rem;
+    line-height: 100px;
+    letter-spacing: 0.01em;
+  }
 }

@@ -27,6 +27,20 @@
   color: #ffffff;
   border-radius: 5px;
   background: $orange;
-  text-transform: uppercase;
   z-index: 1;
+}
+
+@mixin donationText {
+  margin: 0;
+
+  font-weight: 500;
+  font-size: 1.625rem;
+  line-height: 130%;
+}
+
+@mixin smallText {
+  font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 27px;
+  margin: 0;
 }
