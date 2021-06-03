@@ -33,3 +33,8 @@ export let donation_3 = {
 export let donationButton = "donete now";
 export let careText = "CARE FOR THE ANIMALS YOU LOVE";
 
+//footer
+export const footerButton = "Donate for volunteers";
+export const firstLinc = "© 2021 DinaK";
+export const secondtLinc = "© Yem Digital";
+export const trirdLinc = "© RSSchool";

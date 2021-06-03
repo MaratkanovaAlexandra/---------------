@@ -1,0 +1,85 @@
+.footer {
+  width: 100%;
+  background-color: $darkBlue;
+
+  &__top,
+  &__bottom {
+    margin: 0 auto;
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__top {
+    padding: 70px 0;
+    border-bottom: 1px solid #fafafa93;
+
+    &_logos {
+      width: 29.5%;
+
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-zoo,
+    &-yem,
+    &-rs {
+      height: 50px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    &-zoo {
+      min-width: 96px;
+      background-image: url(../assets/icons/white_Logo.svg);
+    }
+
+    &-yem {
+      min-width: 50px;
+      background-image: url(../assets/icons/Yem_Digital.svg);
+    }
+
+    &-rs {
+      min-width: 138px;
+      background-image: url(../assets/icons/rs_school_js.svg);
+    }
+
+    &_nav {
+      width: 31.2%;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &-item {
+        @include buttonText;
+        color: #fff;
+      }
+    }
+
+    &_button {
+      @include basicButton;
+      @include buttonText;
+
+      padding: 16px;
+      border-color: #fff;
+      background-color: transparent;
+    }
+  }
+
+  &__bottom {
+    padding: 40px 0;
+
+    &_links {
+      width: 32%;
+
+      display: flex;
+      justify-content: space-between;
+
+      &-item {
+        @include smallText;
+        color: #fff;
+      }
+    }
+  }
+}
