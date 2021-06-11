@@ -1,5 +1,5 @@
-import { createAndAppendHtmlElement } from "../add-element-function";
-import * as Const from "../const";
+import { createAndAppendHtmlElement } from "../utils/add-element-function";
+import * as Const from "../utils/const";
 
 export class FirstPage {
     private _wrapper:HTMLElement;

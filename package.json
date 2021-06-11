@@ -12,6 +12,8 @@
     "author": "Maratkanova Aleksandra",
     "license": "ISC",
     "dependencies": {
+        "browser": "^0.2.6",
+        "util":"^0.12.4",
         "normalize.css": "^8.0.1",
         "package": "^1.0.1"
     },
