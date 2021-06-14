@@ -1,5 +1,6 @@
 import { createAndAppendHtmlElement } from "../utils/add-element-function";
 import * as Const from "../utils/const";
+import { PopUpEvents } from "./pop-up-events";
 
 export class Messege {
     private _back: HTMLElement;
@@ -22,6 +23,7 @@ export class Messege {
         this._name.placeholder = "Name";
         this._email =  createAndAppendHtmlElement(this._wrapper, "input", "pop_up__emailinput");
         this._email.placeholder = "Email";
+        this._email.type = "email";
 
         this._fondSelector = createAndAppendHtmlElement(this._wrapper, "div", "pop_up__fondinput");
         this._fondSelector.classList.add("messege__fondinput");
@@ -36,6 +38,8 @@ export class Messege {
         this._messege = createAndAppendHtmlElement(this._fondSelector, "textarea", "messege__textarea");
 
         this._button = createAndAppendHtmlElement(this._wrapper, "button", "pop_up__button", "complite");
+        const EVENTS = new PopUpEvents(this._wrapper);
+        EVENTS.init();
     }
 
     get messege(): HTMLElement {

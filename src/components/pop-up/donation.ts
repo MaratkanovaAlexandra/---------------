@@ -1,4 +1,6 @@
 import { createAndAppendHtmlElement } from "../utils/add-element-function";
+import { PopUpEvents } from "./pop-up-events";
+import { DonationEvent } from "./donation-event";
 import * as Const from "../utils/const";
 
 export class Donation {
@@ -21,6 +23,7 @@ export class Donation {
         this._name.placeholder = "Name";
         this._email =  createAndAppendHtmlElement(this._wrapper, "input", "pop_up__emailinput");
         this._email.placeholder = "Email";
+        this._email.type = "email";
 
         this._fondSelector = createAndAppendHtmlElement(this._wrapper, "div", "pop_up__fondinput");
         const OUTPUT = createAndAppendHtmlElement(this._fondSelector, "output", "pop_up__fondOutput");
@@ -34,6 +37,12 @@ export class Donation {
         this._amount = createAndAppendHtmlElement(this._fondSelector, "input", "pop_up__amountinput");
         this._amount.placeholder = "Amount";
         this._button = createAndAppendHtmlElement(this._wrapper, "button", "pop_up__button", "complite");
+
+        const EVENTS = new PopUpEvents(this._wrapper);
+        EVENTS.init();
+
+        const COMPLITE = new DonationEvent(this._wrapper);
+        COMPLITE.init();
     }
 
     get donation(): HTMLElement {
