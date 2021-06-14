@@ -1,4 +1,5 @@
 import { createAndAppendHtmlElement } from "../utils/add-element-function";
+import { StaffEvent } from "./staff-event";
 
 
 export class Staff {
@@ -20,6 +21,9 @@ export class Staff {
         createAndAppendHtmlElement(PERSON_ACTIVITY, "button", "staff__person-button","find");
 
         createAndAppendHtmlElement(this._wrapper, "div", "staff__output");
+
+        const EVENT = new StaffEvent(this._wrapper);
+        EVENT.init();
     }
 
     get staff(): HTMLElement {

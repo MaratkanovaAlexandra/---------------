@@ -45,5 +45,20 @@
     margin: 0 auto;
     width: 70%;
     height: 270px;
+    padding-bottom: 40px;
   }
+}
+.list_element {
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.element {
+  width: 20%;
+  height: min-content;
+  text-align: center;
 }
