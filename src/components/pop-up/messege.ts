@@ -1,6 +1,7 @@
 import { createAndAppendHtmlElement } from "../utils/add-element-function";
 import * as Const from "../utils/const";
 import { PopUpEvents } from "./pop-up-events";
+import { MessegeEvent } from "./messege-events";
 
 export class Messege {
     private _back: HTMLElement;
@@ -40,6 +41,8 @@ export class Messege {
         this._button = createAndAppendHtmlElement(this._wrapper, "button", "pop_up__button", "complite");
         const EVENTS = new PopUpEvents(this._wrapper);
         EVENTS.init();
+        const COMPLITE = new MessegeEvent(this._wrapper);
+        COMPLITE.init();
     }
 
     get messege(): HTMLElement {
