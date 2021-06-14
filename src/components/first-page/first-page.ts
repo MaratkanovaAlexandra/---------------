@@ -1,4 +1,5 @@
 import { createAndAppendHtmlElement } from "../utils/add-element-function";
+import { PageEvent } from "./page-events";
 import * as Const from "../utils/const";
 
 export class FirstPage {
@@ -12,6 +13,9 @@ export class FirstPage {
         this.drawWrapper();
         this.drawTop();
         this.drawBottom();
+
+        const EVENTS = new PageEvent(this._wrapper);
+        EVENTS.init();
     }
     
     private drawWrapper() {
@@ -26,7 +30,7 @@ export class FirstPage {
         const WRAPPER = createAndAppendHtmlElement(this._top,"div","firstPage__wrapper");
         createAndAppendHtmlElement(WRAPPER,"p","firstPage__wrapper_article", Const.article);
         createAndAppendHtmlElement(WRAPPER,"p","firstPage__wrapper_text", Const.articleText);
-        this._mapButton = createAndAppendHtmlElement(WRAPPER,"button","firstPage__wrapper_button", Const.mapBUttonText);
+        this._mapButton = createAndAppendHtmlElement(WRAPPER,"button","firstPage__wrapper_button", Const.donationButton);
         createAndAppendHtmlElement(this._mapButton,"div","button_arrow");
     }
 

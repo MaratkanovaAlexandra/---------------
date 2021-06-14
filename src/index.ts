@@ -16,13 +16,6 @@ FIRSTPAGE.init();
 const FOOTER = new Footer();
 FOOTER.init();
 
-const MESSEGE = new Messege();
-MESSEGE.init();
-//  const DON = new Donation()
-//  DON.init()
-
 ROOT.appendChild(HEADER.header);
 ROOT.appendChild(FIRSTPAGE.firstPage);
 ROOT.appendChild(FOOTER.footer);
-// ROOT.appendChild(DON.donation);
-ROOT.appendChild(MESSEGE.messege)

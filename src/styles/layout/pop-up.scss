@@ -1,6 +1,6 @@
 .pop_up {
   &__back {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     z-index: 10;
@@ -63,7 +63,7 @@
     border: 1px solid rgba(0, 0, 0, 0.5);
     color: rgba(0, 0, 0, 0.6);
     text-align: center;
-    padding-top: 3%;
+    padding-top: 1.5%;
   }
 
   &__fondSelect {
