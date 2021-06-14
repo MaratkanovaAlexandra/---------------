@@ -1,0 +1,116 @@
+.pop_up {
+  &__back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+    background-color: #0000007c;
+  }
+
+  &__wrapper {
+    position: relative;
+    width: 45%;
+    height: 450px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__header {
+    width: 100%;
+    padding: 30px;
+    background-color: $orange;
+    box-sizing: border-box;
+    border-radius: 5px 5px 0 0;
+    @include basicText;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #000;
+  }
+
+  &__nameinput,
+  &__emailinput,
+  &__fondOutput {
+    @include basicText;
+    font-family: "Montserrat";
+
+    width: 80%;
+    height: 50px;
+    padding: 0 20px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    outline: none;
+  }
+
+  &__fondinput {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+
+  &__fondOutput {
+    width: 60%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding-top: 3%;
+  }
+
+  &__fondSelect {
+    position: absolute;
+    top: 70px;
+    width: 59.5%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000;
+    border-top: none;
+    z-index: 5;
+    display: none;
+  }
+
+  &__fondSelectOption {
+    padding: 20px 0;
+    background-color: #ffffff;
+    border: none;
+
+    font-family: "Montserrat";
+    @include basicText;
+
+    &:hover {
+      background-color: $green;
+    }
+  }
+
+  &__amountinput {
+    height: 50px;
+    width: 30%;
+    @include basicText;
+    padding: 0 20px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    outline: none;
+
+    font-family: "Montserrat";
+  }
+
+  &__button {
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    margin-top: 70px;
+    height: 75px;
+    @include basicButton;
+    @include buttonText;
+    width: 200px;
+  }
+}

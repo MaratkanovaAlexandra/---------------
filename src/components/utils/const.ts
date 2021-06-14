@@ -34,7 +34,12 @@ export let donationButton = "donete now";
 export let careText = "CARE FOR THE ANIMALS YOU LOVE";
 
 //footer
-export const footerButton = "Donate for volunteers";
+export const footerButton = "Send a messege";
 export const firstLinc = "© 2021 DinaK";
 export const secondtLinc = "© Yem Digital";
 export const trirdLinc = "© RSSchool";
+
+export const condor = "Condor";
+export const Awesome_Africa = "Awesome Africa";
+export const Hao_Da = "Hao Da";
+export const Coala_Country = "Coala Country";
