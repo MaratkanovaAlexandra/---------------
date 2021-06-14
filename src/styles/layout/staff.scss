@@ -1,0 +1,49 @@
+.staff {
+  background-color: rgb(245, 214, 167);
+  &__buttons {
+    margin: 0 auto;
+    padding-top: 40px;
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+  }
+
+  &__button {
+    @include buttonText;
+    @include basicButton;
+    padding: 5px 10px;
+    font-size: 1.765rem;
+  }
+
+  &__person {
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    display: flex;
+    width: 70%;
+
+    &-text {
+      @include basicText;
+      font-size: 1.765rem;
+      padding-right: 30px;
+    }
+
+    &-input {
+      @include basicText;
+      width: 400px;
+      height: 30px;
+      outline: none;
+      margin-right: 100px;
+    }
+
+    &-button {
+      @include basicButton;
+      @include buttonText;
+    }
+  }
+  &__output {
+    margin: 0 auto;
+    width: 70%;
+    height: 270px;
+  }
+}
