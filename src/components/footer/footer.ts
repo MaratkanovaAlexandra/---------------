@@ -1,4 +1,5 @@
 import { createAndAppendHtmlElement } from "../utils/add-element-function";
+import { FooterEvent } from "./footer-events";
 import * as Const from "../utils/const";
 
 export class Footer {
@@ -9,6 +10,9 @@ export class Footer {
         this.drawFooter();
         this.drawTop();
         this.drawBottom();
+
+        const EVENT = new FooterEvent(this._footer);
+        EVENT.init();
     }
     private drawFooter() {
         this._footer = document.createElement("footer");
