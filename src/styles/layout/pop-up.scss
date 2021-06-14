@@ -114,3 +114,16 @@
     width: 200px;
   }
 }
+.messege {
+  height: 550px;
+}
+
+.messege__fondinput {
+  flex-direction: column;
+}
+
+.messege__textarea {
+  height: 100px;
+  width: 100%;
+  margin-top: 20px;
+}
